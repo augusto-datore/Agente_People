@@ -17,7 +17,7 @@ from google_tools import (
 #carregar a groq_api_key
 load_dotenv() #carrega variáveis de ambiente do arquivo .env
 groq_api_key = os.getenv("GROQ_API_KEY")
-#ERRO: groq_api_key não foi definida, crregue-a com os.getenv("GROQ_API_KEY") antes desse ponto
+#crie a função para registrar o candidato na planilha do Google Sheets
 client = OpenAI(
     api_key=groq_api_key,
     base_url="https://api.groq.com/openai/v1",
