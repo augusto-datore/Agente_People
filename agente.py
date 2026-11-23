@@ -6,7 +6,7 @@ import re #extrai dados do texto do usuário
 import unicodedata #normaliza strings Unicode
 
 from dotenv import load_dotenv #carrega variáveis de ambiente do arquivo .env
-from openai import OpenAI #acessa a API do OpenAI
+from openai import OpenAI # SDK compatível com o endpoint da API Groq
 
 from google_tools import (
     cancelar_evento_calendar,
@@ -95,7 +95,7 @@ PROMPT = (
 "Após coletar todas as informações, utilize as funções disponíveis para agendar a entrevista e registrar o candidato na planilha. "
 "Se a solicitação incluir agendamento de entrevista, a pessoa também deve ser registrada na planilha automaticamente. \n"
  )
-#função para normalizar os dados d entrada
+#Normaliza os dados de entrada
 def normalizar(texto):
     """Função para normalizar,removendo acentos e caracteres especiais."""
     sem_acento = unicodedata.normalize('NFKD', texto)
