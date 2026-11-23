@@ -10,4 +10,4 @@ Aplicação Streamlit para apoiar o fluxo de recrutamento com Groq, Google Calen
 4. Configure a autenticação Google localmente. Os arquivos `credentials.json` e `token.json` não fazem parte desta cópia e estão bloqueados pelo `.gitignore`.
 5. Execute `streamlit run main.py`.
 
-Não publique chaves, tokens, dados de candidatos ou planilhas reais. `localStorage`/arquivos locais não são substitutos para controle de acesso.
+Não publique chaves, tokens, dados de candidatos ou planilhas reais.
